@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -9,7 +8,7 @@ import Footer from "../components/Footer";
 
 import { getAllExploreData, getAllLiveAnywhereData } from "../dummy-data";
 
-const Home: NextPage = ({ exploreData, cardsData }) => {
+function Home({ exploreData, cardsData }) {
   return (
     <div className="bg-red-">
       <Head>
@@ -58,7 +57,7 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
       </main>
     </div>
   );
-};
+}
 
 export async function getStaticProps() {
   // const exploreData = await fetch(
