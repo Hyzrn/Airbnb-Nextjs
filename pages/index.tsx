@@ -5,6 +5,7 @@ import Banner from "../components/Banner";
 import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
 import LargeCard from "../components/LargeCard";
+import Footer from "../components/Footer";
 
 import { getAllExploreData, getAllLiveAnywhereData } from "../dummy-data";
 
@@ -52,6 +53,8 @@ const Home: NextPage = ({ exploreData, cardsData }) => {
           description="Wishlists curated by Airbnb"
           buttonText="Get Inspired"
         />
+
+        <Footer />
       </main>
     </div>
   );
